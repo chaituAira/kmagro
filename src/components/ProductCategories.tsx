@@ -4,40 +4,34 @@ import { Card, CardContent } from "@/components/ui/card";
 export const ProductCategories = () => {
   const products = [
     {
-      name: "Basmati Rice",
+      name: "Sona Masoori Rice",
       description: "Premium long-grain aromatic rice perfect for biryanis and pilafs",
       image: "🌾",
-      varieties: ["1121 Basmati", "Traditional Basmati", "Pusa Basmati"]
+      varieties: ["Medium-grain rice with excellent aroma and taste"],
+      Character: ["Light, fluffy texture when cooked, perfect for daily consumption"],
+      Origins: ["Karnataka, India"],
+      bests: ["Everyday meals, biryanis, and traditional Indian dishes"],
+      Package: ["Available in 25kg, 50kg bags and custom packaging"]
     },
     {
-      name: "Jasmine Rice",
+      name: "RNR Lachkari Woda Kollam Rice",
       description: "Fragrant Thai jasmine rice with delicate floral aroma",
       image: "🍚",
-      varieties: ["Thai Jasmine", "Premium Jasmine", "Organic Jasmine"]
+        varieties: ["Traditional variety with exceptional nutritional value"],
+      Character: ["Rich in fiber, distinctive taste, and superior cooking quality"],
+      Origins: ["Karnataka, India"],
+      bests: ["Health-conscious consumers, traditional recipes, export markets"],
+      Package: ["Available in 25kg, 50kg bags and custom packaging"]
     },
     {
-      name: "Brown Rice",
-      description: "Nutritious whole grain rice packed with fiber and nutrients",
-      image: "🌾",
-      varieties: ["Long Grain Brown", "Short Grain Brown", "Wild Rice Mix"]
-    },
-    {
-      name: "Parboiled Rice",
-      description: "Pre-cooked rice that retains more nutrients and has better texture",
-      image: "🍚",
-      varieties: ["Golden Parboiled", "White Parboiled", "Steam Processed"]
-    },
-    {
-      name: "Sushi Rice",
+      name: "Sona Masoori Raw Rice",
       description: "Short-grain rice perfect for sushi and Japanese cuisine",
       image: "🍱",
-      varieties: ["Premium Sushi", "Organic Sushi", "Traditional Japonica"]
-    },
-    {
-      name: "Wild Rice",
-      description: "Nutrient-dense grain with nutty flavor and chewy texture",
-      image: "🌾",
-      varieties: ["Black Wild Rice", "Red Wild Rice", "Mixed Wild Rice"]
+      varieties: ["Unpolished raw rice with natural nutrients intact"],
+      Character: ["Higher nutritional value, longer shelf life, natural processing"],
+      Origins: ["Karnataka, India"],
+      bests: ["Health-focused markets, organic food enthusiasts, export"],
+      Package: ["Available in 25kg, 50kg bags and custom packaging"]
     }
   ];
 
@@ -66,12 +60,56 @@ export const ProductCategories = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-amber-700 text-sm">Available Varieties:</h4>
+                  <h4 className="font-semibold text-amber-700 text-sm">Premium Quality:</h4>
                   <ul className="space-y-1">
                     {product.varieties.map((variety, idx) => (
                       <li key={idx} className="text-sm text-gray-600 flex items-center">
                         <span className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-2"></span>
                         {variety}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-amber-700 text-sm">Characteristics:</h4>
+                  <ul className="space-y-1">
+                    {product.Character.map((Characteristics, idx) => (
+                      <li key={idx} className="text-sm text-gray-600 flex items-center">
+                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-2"></span>
+                        {Characteristics}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-amber-700 text-sm">Origin:</h4>
+                  <ul className="space-y-1">
+                    {product.Origins.map((Origin, idx) => (
+                      <li key={idx} className="text-sm text-gray-600 flex items-center">
+                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-2"></span>
+                        {Origin}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-amber-700 text-sm">Best For:</h4>
+                  <ul className="space-y-1">
+                    {product.bests.map((best, idx) => (
+                      <li key={idx} className="text-sm text-gray-600 flex items-center">
+                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-2"></span>
+                        {best}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-amber-700 text-sm">Packaging:</h4>
+                  <ul className="space-y-1">
+                    {product.Package.map((Packaging, idx) => (
+                      <li key={idx} className="text-sm text-gray-600 flex items-center">
+                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-2"></span>
+                        {Packaging}
                       </li>
                     ))}
                   </ul>

@@ -5,16 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 export const Services = () => {
   const services = [
     {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Global Export",
-      description: "Worldwide shipping with complete documentation and customs handling"
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "Quality Assurance",
-      description: "Rigorous quality testing and certification for all our rice products"
-    },
-    {
       icon: <Truck className="w-8 h-8" />,
       title: "Logistics Support",
       description: "End-to-end logistics management from warehouse to your doorstep"
@@ -28,11 +18,6 @@ export const Services = () => {
       icon: <Award className="w-8 h-8" />,
       title: "Premium Sourcing",
       description: "Direct partnerships with certified farmers ensuring premium quality"
-    },
-    {
-      icon: <Headphones className="w-8 h-8" />,
-      title: "24/7 Support",
-      description: "Round-the-clock customer support for all your trading needs"
     }
   ];
 

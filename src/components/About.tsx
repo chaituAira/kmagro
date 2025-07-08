@@ -10,13 +10,6 @@ export const About = () => {
     "Fair Trade Partnerships"
   ];
 
-  const stats = [
-    { icon: <Users className="w-6 h-6" />, number: "1000+", label: "Happy Clients" },
-    { icon: <TrendingUp className="w-6 h-6" />, number: "50M+", label: "Tons Traded" },
-    { icon: <MapPin className="w-6 h-6" />, number: "25+", label: "Countries" },
-    { icon: <CheckCircle className="w-6 h-6" />, number: "38+", label: "Years Experience" }
-  ];
-
   return (
     <section id="about" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -52,33 +45,20 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="space-y-8">
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <Card key={index} className="text-center border-0 shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
-                      {stat.icon}
-                    </div>
-                    <div className="text-2xl font-bold text-gray-900 mb-1">{stat.number}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
+        
             <Card className="bg-gradient-to-br from-amber-400 to-amber-600 text-white border-0 shadow-xl">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-amber-100">
                   To bridge the gap between premium rice producers and global markets, 
-                  ensuring sustainable partnerships that benefit farmers, businesses, and consumers alike.
+                  ensuring sustainable partnerships that benefit farmers, businesses, and consumers alike.<br/>
+                 <b>Quality Assurance:</b> Ensuring that the rice meets international standards for quality and safety. This includes proper cultivation practices, harvesting, and processing.<br/>
+                 <b>Market Access:</b> Facilitating access to global markets through trade agreements, export licenses, and partnerships with international distributors and retailers. 
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
-      </div>
     </section>
   );
 };

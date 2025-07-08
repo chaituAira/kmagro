@@ -22,7 +22,7 @@ export const Header = () => {
             </div>
           </div>
           <div className="hidden md:block text-amber-700">
-            Premium Quality Rice Since 1985
+            Premium Quality Rice Since 2024
           </div>
         </div>
       </div>
@@ -53,9 +53,9 @@ export const Header = () => {
             <a href="#contact" className="text-gray-700 hover:text-amber-600 transition-colors">Contact</a>
           </nav>
 
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button className="bg-amber-600 hover:bg-amber-700">Get Quote</Button>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <button
