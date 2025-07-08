@@ -89,14 +89,11 @@ export const Contact = () => {
 
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
-                <h2>Contact Us</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
-                    <div>
-                        <h3>Get In Touch</h3>
-                        <div class="contact-form">
-                            <form id="contactForm">
-                                <div class="form-group">
-                                    <label for="inquiryType">Inquiry Type</label>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  {/* <div className="form-group">
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Inquiry Type</label>
                                     <select id="inquiryType" name="inquiryType" required>
                                         <option value="">Select Inquiry Type</option>
                                         <option value="general">General Feedback</option>
@@ -104,48 +101,36 @@ export const Contact = () => {
                                         <option value="export">Export Inquiry</option>
                                         <option value="bulk">Bulk Order</option>
                                     </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="company">Company Name</label>
-                                    <input type="text" id="company" name="company">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="product">Product Interest</label>
-                                    <select id="product" name="product">
-                                        <option value="">Select Product</option>
-                                        <option value="sona-masoori">Sona Masoori Rice</option>
-                                        <option value="rnr-lachkari">RNR Lachkari Woda Kollam Rice</option>
-                                        <option value="sona-masoori-raw">Sona Masoori Raw Rice</option>
-                                        <option value="all">All Products</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" rows="5" required></textarea>
-                                </div>
-                                
-                                <button type="submit" class="submit-btn">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
+                                </div> */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                    <Input placeholder="Enter your first name" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                    <Input placeholder="Enter your last name" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <Input type="email" placeholder="Enter your email address" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                  <Input placeholder="Enter your company name" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                  <Textarea 
+                    placeholder="Tell us about your rice sourcing requirements..."
+                    className="min-h-[120px]"
+                  />
+                </div>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700">
+                  Send Message
+                  <Send className="w-4 h-4 ml-2" />
+                </Button>
+              </form>
             </CardContent>
           </Card>
         </div>
