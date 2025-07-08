@@ -10,18 +10,18 @@ export const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Address",
-      details: ["Karunamaya Agro Foods, Karatagi, Karnataka 583229", "India"],
+      details: ["Karunamaya Agro Foods, No.341 & 342 Naganakal-Chellur Road, Vinayakanagar-Karatagi, Koppal Dist Karnataka 583229", "India"],
       link: "https://goo.gl/https://www.google.com/maps/place/Karunamaya+Agro+Foods/@15.6173176,76.6155666,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb78fa114939d23:0x7aa4e03e89553d50!8m2!3d15.6173125!4d76.6204375!16s%2Fg%2F11kblh0bq0?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D/xyz123" // Example link, replace with
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: ["+91 9900228099", "S Venkata Rao", "+91 9740198888", "A Rajesh", "Managing Director"]
+      details: ["+91 9900228099", "S Venkata Rao", "+91 9740198888", "A Rajesh"]
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: ["info@kmagro.com", "sales@kmagro.com"]
+      details: ["info@kmagro.com"]
     },
     {
       icon: <Clock className="w-6 h-6" />,

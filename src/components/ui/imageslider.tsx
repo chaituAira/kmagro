@@ -10,11 +10,11 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "src/images/slide2.png"
+    image: "src/images/slide1.png"
     // title: "Premium Rice Collections",
     // description: "Quality Guaranteed from Farm to Table",
     // alt: "Premium rice varieties in wooden bowls"
-  },
+  },        
   {
     id: 2,
     image: "src/images/slide3.png"

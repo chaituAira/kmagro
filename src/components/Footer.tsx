@@ -13,12 +13,9 @@ export const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Karunamaya Agro Foods</h3>
-                <p className="text-sm text-gray-400">Premium Quality Trader</p>
+                <p className="text-sm text-gray-400">Premium Quality Manufacture Rice</p>
               </div>
             </div>
-            <p className="text-gray-300">
-              Your trusted partner for premium rice trading worldwide. Quality guaranteed, delivery assured.
-            </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
                 <Facebook className="w-5 h-5" />
@@ -49,11 +46,9 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6">Products</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Basmati Rice</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Jasmine Rice</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Brown Rice</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Parboiled Rice</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Wild Rice</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Sona Masoori Rice</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">RNR Lachkari Woda Kollam Rice</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-amber-400 transition-colors">Sona Masoori Raw Rice</a></li>
             </ul>
           </div>
 
