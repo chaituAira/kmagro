@@ -33,7 +33,7 @@ export const Header = () => {
           <div className="flex items-center space-x-2">
             <div className="w-12 h-12 flex items-center justify-center">
               <img 
-                src="..\src\images\icon.png" 
+                src="/static/images/icon.png" 
                 alt="Karunamaya Agro Foods Logo" 
                 className="w-12 h-12 object-contain"
               />

@@ -5,7 +5,7 @@ import ImageSlider from "@/components/ui/imageslider";
 export const Hero = () => {
   return (
     <section id="home" className="relative bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden">
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-2">

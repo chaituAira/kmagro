@@ -5,8 +5,7 @@ export const ProductCategories = () => {
   const products = [
     {
       name: "Sona Masoori Rice",
-      image: "../src/images/product.png",
-
+      image: "/static/images/product.png",
       varieties: ["Medium-grain rice with excellent aroma and taste"],
       Character: ["Light, fluffy texture when cooked, perfect for daily consumption"],
       Origins: ["Karnataka, India"],
@@ -15,8 +14,8 @@ export const ProductCategories = () => {
     },
     {
       name: "RNR Lachkari Woda Kollam Rice",
-      image: "../src/images/product2.png",
-        varieties: ["Traditional variety with exceptional nutritional value"],
+      image: "/static/images/product2.png",
+      varieties: ["Traditional variety with exceptional nutritional value"],
       Character: ["Rich in fiber, distinctive taste, and superior cooking quality"],
       Origins: ["Karnataka, India"],
       bests: ["Health-conscious consumers, traditional recipes, export markets"],
@@ -24,7 +23,7 @@ export const ProductCategories = () => {
     },
     {
       name: "Sona Masoori Raw Rice",
-      image: "../src/images/product3.png",
+      image: "/static/images/product3.png",
       varieties: ["Unpolished raw rice with natural nutrients intact"],
       Character: ["Higher nutritional value, longer shelf life, natural processing"],
       Origins: ["Karnataka, India"],

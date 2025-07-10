@@ -10,19 +10,19 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "../src/images/slide8.png"
+    image: "/static/images/slide8.png"
   },        
   {
     id: 2,
-    image: "../src/images/slide3.png"
+    image: "/static/images/slide3.png"
   },
   {
     id: 3,
-    image: "../src/images/slide4.png"
+    image: "/static/images/slide4.png"
   },
   {
     id: 7,
-    image: "../src/images/slide1.png"
+    image: "/static/images/slide2.png"
   }
 ];
 
@@ -80,12 +80,12 @@ const ImageSlider: React.FC = () => {
   }, [nextSlide, prevSlide, toggleAutoPlay]);
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto group">
+    <div className="relative w-full">
       {/* Main slider container */}
       <div className="relative overflow-hidden rounded-2xl shadow-2xl">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          style={{ transform: `translateX(-${currentSlide * 200}%)` }}
         >
           {slides.map((slide, index) => (
             <div key={slide.id} className="min-w-full relative">
