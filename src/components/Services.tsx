@@ -22,9 +22,9 @@ export const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-16 lg:py-24 bg-amber-50">
+    <section id="services" className="py-8 bg-amber-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Our Services
           </h2>
@@ -33,7 +33,7 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white hover:-translate-y-2">
               <CardContent className="p-8 text-center">

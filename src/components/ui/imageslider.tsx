@@ -10,40 +10,19 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "src/images/slide1.png"
-    // title: "Premium Rice Collections",
-    // description: "Quality Guaranteed from Farm to Table",
-    // alt: "Premium rice varieties in wooden bowls"
+    image: "../src/images/slide8.png"
   },        
   {
     id: 2,
-    image: "src/images/slide3.png"
-    // title: "Organic Grain Selection",
-    // description: "Sustainably Sourced & Naturally Grown",
-    // alt: "Organic grains and rice in rustic setting"
+    image: "../src/images/slide3.png"
   },
   {
     id: 3,
-    image: "src/images/slide4.png"
-    // title: "Traditional Harvesting",
-    // description: "Time-Honored Methods for Superior Quality",
-    // alt: "Traditional rice harvesting scene"
-  },
-  {
-    id: 4,
-    image: "src/images/slide5.png"
-  },
-  {
-    id: 5,
-    image: "src/images/slide6.png"
-  },
-  {
-    id: 6,
-    image: "src/images/slide7.png"
+    image: "../src/images/slide4.png"
   },
   {
     id: 7,
-    image: "src/images/slide8.webp"
+    image: "../src/images/slide1.png"
   }
 ];
 

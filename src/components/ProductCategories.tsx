@@ -5,8 +5,8 @@ export const ProductCategories = () => {
   const products = [
     {
       name: "Sona Masoori Rice",
-      description: "Premium long-grain aromatic rice perfect for biryanis and pilafs",
-      image: "🌾",
+      image: "../src/images/product.png",
+
       varieties: ["Medium-grain rice with excellent aroma and taste"],
       Character: ["Light, fluffy texture when cooked, perfect for daily consumption"],
       Origins: ["Karnataka, India"],
@@ -15,8 +15,7 @@ export const ProductCategories = () => {
     },
     {
       name: "RNR Lachkari Woda Kollam Rice",
-      description: "Fragrant Thai jasmine rice with delicate floral aroma",
-      image: "🍚",
+      image: "../src/images/product2.png",
         varieties: ["Traditional variety with exceptional nutritional value"],
       Character: ["Rich in fiber, distinctive taste, and superior cooking quality"],
       Origins: ["Karnataka, India"],
@@ -25,8 +24,7 @@ export const ProductCategories = () => {
     },
     {
       name: "Sona Masoori Raw Rice",
-      description: "Short-grain rice perfect for sushi and Japanese cuisine",
-      image: "🍱",
+      image: "../src/images/product3.png",
       varieties: ["Unpolished raw rice with natural nutrients intact"],
       Character: ["Higher nutritional value, longer shelf life, natural processing"],
       Origins: ["Karnataka, India"],
@@ -36,7 +34,7 @@ export const ProductCategories = () => {
   ];
 
   return (
-    <section id="products" className="py-16 lg:py-24 bg-white">
+    <section id="products" className="py-5 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -52,11 +50,14 @@ export const ProductCategories = () => {
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md hover:-translate-y-2">
               <CardContent className="p-6">
                 <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-amber-100 to-amber-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-3xl">{product.image}</span>
-                  </div>
+                   <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                </div>
+              <div className="text-center mb-4">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
-                  <p className="text-gray-600 text-sm mb-4">{product.description}</p>
                 </div>
                 
                 <div className="space-y-2">
