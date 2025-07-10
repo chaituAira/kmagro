@@ -26,9 +26,9 @@ export const Hero = () => {
             </div>
             </div>
           </div>
-
+<ImageSlider/>
         </div>
-                <ImageSlider/>
+                
 
     </section>
   );

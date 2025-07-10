@@ -18,12 +18,17 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    image: "/static/images/slide4.png"
+    image: "/static/images/slide1.png"
   },
   {
-    id: 7,
+    id: 4,
+    image: "/static/images/slide2.png"
+    ,
+  },{
+    id: 4,
     image: "/static/images/slide2.png"
   }
+  
 ];
 
 const ImageSlider: React.FC = () => {
@@ -89,7 +94,7 @@ const ImageSlider: React.FC = () => {
         >
           {slides.map((slide, index) => (
             <div key={slide.id} className="min-w-full relative">
-              <div className="w-full h-96 lg:h-[500px] relative">
+              <div className="w-full h-96 lg:h-[750px] relative">
                 <img 
                   src={slide.image}
                   className="w-full h-full object-cover"
